@@ -1,8 +1,0 @@
-.container {
-  max-width: $width-content;
-  margin: 0 auto;
-  padding: 0 5rem;
-  @include breakpoint($medium-size) {
-    padding: 0 1.5rem;
-  }
-}
