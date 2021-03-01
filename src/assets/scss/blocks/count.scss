@@ -1,0 +1,32 @@
+.count {
+  &__number,
+  &__button {
+    border: 1px solid $grey;
+    float: left;
+  }
+  &__number {
+    width: 30px;
+    outline: none;
+  }
+  &__button {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    &:before {
+      content: '\276E';
+      position: absolute;
+      color: $grey;
+      font-size: 1.2rem;
+      transform: translate(-50%, -50%);
+    }
+    &:last-child {
+      transform: rotate(180deg);
+    }
+  }
+  &__number {
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    height: 20px;
+  }
+}

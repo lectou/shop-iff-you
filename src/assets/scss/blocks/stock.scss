@@ -1,0 +1,128 @@
+.stock {
+  margin-bottom: 8rem;
+  &__discount {
+    background-color: $orange;
+    color: $white;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  &__breadcrumb {
+    margin-bottom: 2rem;
+  }
+}
+.catalog {
+  &__nav {
+    @include breakpoint($small-size) {
+      border-right: none;
+    }
+  }
+  &__title {
+    color: $black;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  &__block {
+    display: flex;
+    border-top: 1px solid $light-grey;
+    @include breakpoint($small-size) {
+      flex-direction: column;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 230px));
+    grid-template-rows: 1fr;
+    grid-gap: 3rem;
+    padding: 3rem 0 0 5rem;
+    @include breakpoint(990px) {
+      grid-template-columns: repeat(3, minmax(150px, 230px));
+    }
+    @include breakpoint(810px) {
+      grid-template-columns: repeat(2, minmax(150px, 230px));
+    }
+    @include breakpoint($small-size) {
+      padding: 3rem 1rem 0 1rem;
+      margin: 0 auto;
+    }
+    @include breakpoint(470px) {
+      grid-template-columns: repeat(1, minmax(150px, 230px));
+    }
+  }
+  &__item {
+    z-index: 0;
+    margin-right: 0;
+    &:hover {
+      z-index: 10;
+    }
+  }
+}
+.clothess,
+.colors,
+.new-items,
+.shares {
+  padding: 2rem 2rem 2rem 0;
+  border-bottom: 1px solid $light-grey;
+  border-right: 1px solid $light-grey;
+  @include breakpoint($small-size) {
+    padding-right: 0;
+    border-right: 0;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  &__link {
+    color: $black;
+  }
+  &__list {
+    @include breakpoint($small-size) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    @include breakpoint($small-size) {
+      margin-right: 1rem;
+    }
+  }
+}
+.size {
+  padding: 2rem 2rem 2rem 0;
+  border-bottom: 1px solid $light-grey;
+  border-right: 1px solid $light-grey;
+  @include breakpoint($small-size) {
+    padding-right: 0;
+    border-right: 0;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 3.2rem);
+    grid-gap: 1rem;
+    @include breakpoint($small-size) {
+      grid-template-columns: repeat(auto-fill, 3.2rem);
+    }
+  }
+  &__number {
+    display: none;
+    & + label {
+      border: 1px solid $grey;
+      padding: 0 0.7rem;
+      color: $black;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+    &:checked + label {
+      background-color: grey;
+      color: $white;
+    }
+  }
+}

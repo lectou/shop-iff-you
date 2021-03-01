@@ -1,0 +1,13 @@
+.btn {
+  background-color: $accent;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: $white;
+  max-width: 30rem;
+  padding: 1.2rem 3rem;
+  transition: background-color 0.3s ease-in;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($color: $accent, $amount: 10);
+  }
+}

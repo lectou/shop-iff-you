@@ -1,0 +1,38 @@
+<div class="modal" id="contact-modal">
+  <div class="modal__content">
+    <button class="modal__close" type="button">
+      <img src="../assets/images/modal/cancel.svg" alt="close-icon" />
+    </button>
+    <form class="form form__auth" action="/" method="post">
+      <div class="form__group form__group-md">
+        <input class="form__control" type="text" placeholder="Ваше имя" />
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group-md">
+        <input class="form__control" type="email" placeholder="Ваше e-mail" />
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group form__group-md">
+        <textarea
+          class="form__control form__control--textarea"
+          name="comment-text"
+          placeholder="Текст сообщения"
+        ></textarea>
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__footer">
+        <div class="form__group form__group-md">
+          <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+        </div>
+      </div>
+    </form>
+
+    <ul class="modal__footer">
+      <li>e-mail:<a href="mailto:lectou@outlook.com"> lectou@outlook.com</a></li>
+      <li>тел:<a href="tel:+88888888888"> +888-888-888-88</a></li>
+    </ul>
+  </div>
+</div>

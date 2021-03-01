@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {{> head }}
+  </head>
+  <body>
+    <div class="page">
+      <!-- Header -->
+      {{> header }}
+
+      <!-- Main -->
+      <main class="main">{{> body }}</main>
+
+      <!-- Footer -->
+      <div class="footer">{{> footer }}</div>
+    </div>
+
+    <!-- Overlay-nav -->
+    {{> overlay-nav}}
+
+    <!-- Overlay-menu -->
+    {{> overlay-menu }}
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

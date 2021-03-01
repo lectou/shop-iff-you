@@ -1,0 +1,40 @@
+.production {
+  position: relative;
+  background-color: #dcd;
+  background-image: url('../images/front-page/front-bg-image.jpg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  margin-bottom: 9rem;
+  &__title {
+    font-size: 4.4rem;
+    color: $black;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  @include breakpoint($medium-size) {
+    margin-bottom: 4rem;
+  }
+  &__description {
+    padding: 16rem 0;
+    max-width: 57rem;
+    color: $black;
+    @include breakpoint($medium-size) {
+      padding: 7rem 0;
+    }
+  }
+  &__title {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 4.5rem;
+    text-align: left;
+    @include breakpoint($medium-size) {
+      font-size: 3.8rem;
+    }
+  }
+  &__text {
+    font-size: 1.6rem;
+    margin-bottom: 4.5rem;
+  }
+}

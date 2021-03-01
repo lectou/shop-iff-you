@@ -1,0 +1,151 @@
+.cart {
+  margin: 8rem 0;
+  overflow: hidden;
+  @include breakpoint($small-size) {
+    margin-top: 4rem;
+  }
+  &__block {
+    display: flex;
+    @include breakpoint($large-size) {
+      flex-direction: column;
+    }
+  }
+  &__top {
+    order: 2;
+    flex-basis: 50%;
+    background-color: #f5f3ee;
+    padding: 4rem;
+    align-self: start;
+    margin-bottom: 2rem;
+    @include breakpoint($large-size) {
+      order: 1;
+      width: 100%;
+    }
+    @include breakpoint($medium-size) {
+      padding: 4rem 2rem;
+    }
+  }
+  &__button {
+    margin-top: 2rem;
+  }
+  &__total-price {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      flex-basis: 60%;
+      display: block;
+      white-space: nowrap;
+      margin-bottom: 1rem;
+      &:nth-child(even) {
+        flex-basis: 40%;
+        font-weight: 500;
+      }
+      &:nth-child(n + 7) {
+        font-weight: 500;
+        font-size: 2rem;
+        margin: 3rem 0;
+      }
+      &:nth-child(-n + 2) {
+        margin-bottom: 3rem;
+      }
+      @include breakpoint($large-size) {
+        flex-basis: 30%;
+        &:nth-child(-n + 2) {
+          margin-bottom: 0;
+        }
+        &:nth-child(even) {
+          flex-basis: 20%;
+        }
+        &:nth-child(n + 7) {
+          margin: 0;
+        }
+      }
+      @include breakpoint(680px) {
+        white-space: normal;
+        flex-basis: 40%;
+        &:nth-child(even) {
+          flex-basis: 60%;
+        }
+      }
+      @include breakpoint(490px) {
+        flex-basis: 50%;
+        &:nth-child(even) {
+          flex-basis: 50%;
+        }
+      }
+      @include breakpoint(490px) {
+        flex-basis: 65%;
+        &:nth-child(even) {
+          flex-basis: 35%;
+        }
+      }
+    }
+  }
+  &__list {
+    order: 1;
+    flex-basis: 50%;
+    margin-right: 3rem;
+    @include breakpoint($large-size) {
+      order: 2;
+      margin-right: 0;
+    }
+  }
+}
+.my-cart {
+  &__item {
+    padding: 2rem;
+    border: 1px solid $grey;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    &:before {
+      content: '\2715';
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      color: $grey;
+      cursor: pointer;
+    }
+    @include breakpoint($large-size) {
+      max-width: 55rem;
+    }
+    @include breakpoint(480px) {
+      flex-direction: column;
+      align-items: center;
+      max-width: 35rem;
+    }
+  }
+  &__description {
+    max-width: 25rem;
+    margin: auto 0;
+    & * {
+      margin-bottom: 1rem;
+    }
+  }
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  &__image {
+    max-width: 13.5rem;
+    margin-right: 2rem;
+    @include breakpoint(480px) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__options {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      display: block;
+      max-width: 50%;
+      width: 100%;
+      &:nth-child(odd) {
+        font-weight: 500;
+      }
+    }
+  }
+}

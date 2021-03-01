@@ -1,0 +1,66 @@
+.overlay-block {
+  position: fixed;
+  background-color: rgba($color: $oldlace, $alpha: 0.9);
+  top: -5rem;
+  width: 100%;
+  display: block;
+  z-index: 100;
+  color: #fff;
+  transition: top 0.3s ease-in;
+  overflow: hidden;
+  display: none;
+  @include breakpoint($large-size) {
+    display: block;
+    width: 100px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+}
+.overlay-nav {
+  height: 5rem;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 50rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    @include breakpoint($large-size) {
+      display: none;
+    }
+  }
+  #burgerNav {
+    @include breakpoint($large-size) {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -53%);
+      span {
+        background: darken($color: $grey, $amount: 35);
+      }
+    }
+  }
+  &__link {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: darken($color: $grey, $amount: 45);
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s;
+    &:hover {
+      color: $grey;
+      text-decoration: none;
+    }
+  }
+}
+.overlay-active {
+  top: 0;
+  @include breakpoint($large-size) {
+    top: 10px;
+  }
+}
