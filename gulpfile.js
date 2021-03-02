@@ -16,7 +16,7 @@ const panini = require("panini");
 const webp = require("gulp-webp");
 const plumber = require("gulp-plumber");
 const rigger = require("gulp-rigger");
-
+const ghPages = require('gulp-gh-pages');
 
 
 const srcPath = 'src/';
@@ -163,8 +163,8 @@ function images(cb) {
 
 function fonts(cb) {
     return src(path.src.fonts)
-        .pipe(dest(path.build.fonts))
-        .pipe(browserSync.reload({ stream: true }));
+    .pipe(dest(path.build.fonts))
+    .pipe(browserSync.reload({ stream: true }));
 
     cb();
 }
@@ -175,6 +175,11 @@ function clean(cb) {
 
     cb();
 }
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
 
 
 function watchFiles() {
