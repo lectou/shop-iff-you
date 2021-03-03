@@ -1,10 +1,5 @@
 $(window).on("load", function () {
 
-  // $(".load").addClass("active");
-  // window.setTimeout(function () {
-  //   $(".load").removeClass("active");
-  // }, 1000);
-
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 200) {
       $(".overlay-block").addClass("overlay-active");
@@ -68,6 +63,7 @@ $(window).on("load", function () {
           slidesToScroll: 1,
           verticalSwiping: false,
           dots: true,
+          asNavFor: ".sliderbig",
           prevArrow: "<img src='assets/images/slider/icons/left.png' class='prev'>",
           nextArrow: "<img src='assets/images/slider/icons/right.png' class='next'>"
         }
@@ -84,6 +80,7 @@ $(window).on("load", function () {
           focusOnSelect: true,
           verticalSwiping: false,
           dots: true,
+          asNavFor: ".sliderbig",
         }
       },
       {

@@ -201,7 +201,6 @@ let watch = gulp.parallel(build, watchFiles, serve);
 // const watch = gulp.parallel(build, watchFiles, serve);
 
 exports.html = html;
-exports.deploy = deploy;
 exports.css = css;
 exports.js = js;
 exports.images = images;

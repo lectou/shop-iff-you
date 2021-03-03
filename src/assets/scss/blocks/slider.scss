@@ -1,8 +1,8 @@
 .slider {
-  width: calc(10rem + 2px);
+  width: 10rem;
   overflow: hidden;
   height: 66rem;
-  margin-right: 2.2rem;
+  margin-right: 2rem;
   position: relative;
   @include breakpoint(1030px) {
     height: 49.1rem;
@@ -28,14 +28,17 @@
     padding-right: 0;
   }
   &__item {
-    text-align: center;
     margin-bottom: 1.5rem;
+    max-width: 10rem;
+    width: 100%;
+    @include breakpoint(930px) {
+      max-width: 7rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &__image {
-    max-width: calc(10rem + 2px);
-    @include breakpoint(930px) {
-      height: 10rem;
-    }
+    width: 100%;
   }
   .prev {
     position: absolute;
@@ -60,15 +63,14 @@
       position: relative;
       outline: none;
       cursor: grab;
-      img {
-        border: 3px solid transparent;
+      & > div {
+        @include breakpoint(930px) {
+          display: flex;
+          align-items: center;
+        }
       }
     }
-    &-current {
-      img {
-        border: 3px solid #000;
-      }
-    }
+
     &-list {
       @include breakpoint(930px) {
         max-width: 50rem;
@@ -79,6 +81,7 @@
       }
     }
     &-track {
+      width: 100%;
       @include breakpoint(930px) {
         display: flex;
       }
@@ -94,7 +97,7 @@
   height: 67.3rem;
   @include breakpoint(1030px) {
     width: 32rem;
-    height: 48.8rem;
+    height: 49.1rem;
   }
   @include breakpoint(930px) {
     order: 0;

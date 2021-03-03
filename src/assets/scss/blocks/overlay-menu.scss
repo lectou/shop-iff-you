@@ -20,11 +20,18 @@
     border: 1px solid $black;
     border-radius: 50%;
   }
+  &__search {
+    max-width: 300px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5rem;
+    @include breakpoint($small-size) {
+      margin-bottom: 3rem;
+    }
+  }
   &__nav {
-    position: absolute;
-    top: 20%;
-    right: 50%;
-    transform: translateX(50%);
+    margin-bottom: 3rem;
     &-block {
       flex-direction: column;
       align-items: center;

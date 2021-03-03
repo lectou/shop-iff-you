@@ -2,6 +2,7 @@
   "name": "shop",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://lectou.github.io/shop-iff-you/",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

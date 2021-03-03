@@ -1,0 +1,82 @@
+// @font-face {
+//   font-family: 'Proxima Nova';
+//   src: url('.../fonts/ProximaNova-Black.eot');
+//   src: local('../fonts/Proxima Nova Black'), local('ProximaNova-Black'),
+//     url('../fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+//     url('../fonts/ProximaNova-Black.woff') format('woff'),
+//     url('../fonts/ProximaNova-Black.ttf') format('truetype');
+//   font-weight: 900;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Proxima Nova';
+//   src: url('../fonts/ProximaNova-Bold.eot');
+//   src: local('../fonts/Proxima Nova Bold'), local('ProximaNova-Bold'),
+//     url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+//     url('../fonts/ProximaNova-Bold.woff') format('woff'),
+//     url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Proxima Nova';
+//   src: url('../fonts/ProximaNova-Regular.eot');
+//   src: local('../fonts/Proxima Nova Regular'), local('ProximaNova-Regular'),
+//     url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+//     url('../fonts/ProximaNova-Regular.woff') format('woff'),
+//     url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Proxima Nova';
+//   src: url('../fonts/ProximaNova-Extrabld.eot');
+//   src: local('../fonts/Proxima Nova Extrabold'), local('ProximaNova-Extrabld'),
+//     url('../fonts/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
+//     url('../fonts/ProximaNova-Extrabld.woff') format('woff'),
+//     url('../fonts/ProximaNova-Extrabld.ttf') format('truetype');
+//   font-weight: 800;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Regular.eot');
+  src: local('☺'), url('../fonts/Rubik-Regular.woff') format('woff'),
+    url('../fonts/Rubik-Regular.ttf') format('truetype'),
+    url('../fonts/Rubik-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Medium.eot');
+  src: local('☺'), url('../fonts/Rubik-Medium.woff') format('woff'),
+    url('../fonts/Rubik-Medium.ttf') format('truetype'),
+    url('../fonts/Rubik-Medium.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-SemiBold.eot');
+  src: local('☺'), url('../fonts/Rubik-SemiBold.woff') format('woff'),
+    url('../fonts/Rubik-SemiBold.ttf') format('truetype'),
+    url('../fonts/Rubik-SemiBold.svg') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Bold.eot');
+  src: local('☺'), url('../fonts/Rubik-Bold.woff') format('woff'),
+    url('../fonts/Rubik-Bold.ttf') format('truetype'), url('../fonts/Rubik-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
